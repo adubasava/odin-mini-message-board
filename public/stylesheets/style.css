@@ -1,0 +1,54 @@
+body {
+  padding: 50px;
+  font:
+    14px "Lucida Grande",
+    Helvetica,
+    Arial,
+    sans-serif;
+  background-color: rgb(162, 211, 241);
+}
+
+a {
+  color: #00b7ff;
+  background-color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.user {
+  margin-bottom: 3px;
+}
+
+.date {
+  color: rgb(68, 65, 65);
+}
+
+.submit {
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: yellowgreen;
+  padding: 8px 12px;
+}
+
+#user {
+  width: 20%;
+}
+
+#message {
+  width: 50%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 30px;
+  padding: 5px 10px;
+}

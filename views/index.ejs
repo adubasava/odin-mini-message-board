@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <a href="/new">Add Message</a>
+    
+    <% for (let i = 0; i < messages.length; i++) { %>
+      <h4 class="user"><%= messages[i].user %> </h4>
+      <%= messages[i].text %> 
+      <div class="date"> 
+        <%= messages[i].added %> 
+      </div>
+      <% } %> 
+  </body>
+</html>

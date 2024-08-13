@@ -23,6 +23,15 @@ router.get("/new", function (req, res, next) {
   res.render("form", { title: "Mini Messageboard" });
 });
 
+router.get("/message/:id", function (req, res, next) {
+  const messageId = req.params.id;
+  res.render("message", {
+    title: "Mini Messageboard",
+    messages: messages,
+    id: messageId,
+  });
+});
+
 router.post("/new", function (req, res, next) {
   const { messageUser, messageText } = req.body;
   messages.push({

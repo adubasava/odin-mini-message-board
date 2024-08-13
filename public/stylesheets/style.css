@@ -83,11 +83,11 @@ a:hover {
 }
 
 #user {
-  width: 20%;
+  width: 40%;
 }
 
 #message {
-  width: 50%;
+  width: 90%;
 }
 
 input:focus {

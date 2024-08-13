@@ -5,16 +5,53 @@ body {
     Helvetica,
     Arial,
     sans-serif;
+  background-color: rgba(162, 211, 241, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
   background-color: rgb(162, 211, 241);
+  padding: 30px;
+  border-radius: 12px;
+  width: max-content;
+}
+
+.add {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.message-container {
+  background-color: aliceblue;
+  padding: 3px 10px 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
 }
 
 a {
+  color: white;
+  background-color: #00b7ff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+a:hover {
   color: #00b7ff;
   background-color: white;
-  text-decoration: none;
-  padding: 5px;
+  border: 1px solid black;
+}
+
+.message {
+  padding: 3px 10px 5px 10px;
   border-radius: 6px;
-  box-shadow: 2px 2px 2px gray;
+  margin-bottom: 20px;
 }
 
 .user {

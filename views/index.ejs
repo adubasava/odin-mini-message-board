@@ -5,17 +5,26 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="board">
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      <div class="add">
+        <a href="/new">Add Message</a>
+      </div>      
+      
+      <% for (let i = 0; i < messages.length; i++) { %>
+        <div class="message-container">
+          <div class="message">
+            <h4 class="user"><%= messages[i].user %> </h4>
+            <%= messages[i].text %> 
+            <div class="date"> 
+              <%= messages[i].added %> 
+            </div>          
+          </div>
+          <div class="open"><a href="/new">Open</a></div>          
+        </div>
 
-    <a href="/new">Add Message</a>
-    
-    <% for (let i = 0; i < messages.length; i++) { %>
-      <h4 class="user"><%= messages[i].user %> </h4>
-      <%= messages[i].text %> 
-      <div class="date"> 
-        <%= messages[i].added %> 
-      </div>
-      <% } %> 
+        <% } %> 
+    </div>
   </body>
 </html>

@@ -21,7 +21,7 @@ async function main() {
   const client = new Client({
     connectionString:
       process.env.DATABASE_URL ||
-      "postgresql://${{PGUSER}}:${{POSTGRES_PASSWORD}}@${{RAILWAY_PRIVATE_DOMAIN}}:5432/${{PGDATABASE}}",
+      `postgresql://${{ PGUSER }}:${{ POSTGRES_PASSWORD }}@${{ RAILWAY_PRIVATE_DOMAIN }}:5432/${{ PGDATABASE }}`,
   });
   await client.connect();
   await client.query(SQL);
